@@ -2,10 +2,10 @@ package com.michalbaczewski.main;
 
 import java.util.EmptyStackException;
 
-public class LinkedStack<T> {
+public class LinkedStack<T> implements Stack<T> {
 
     private StackElement<T> top;
-    private int size;
+    private Integer size;
 
     public void push(T element) {
         top = new StackElement<>(element, top);

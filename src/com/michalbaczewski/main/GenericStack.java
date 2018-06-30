@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.EmptyStackException;
 import java.util.List;
 
-public class GenericStack<T> {
+public class GenericStack<T> implements Stack<T>{
 
     private T element;
     private List<T> stackList;
